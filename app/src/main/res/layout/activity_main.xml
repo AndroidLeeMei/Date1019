@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.auser.date1019.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageShow"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image1"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="119dp"
+        android:layout_height="36dp"
+        android:text="拍攝地點:"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/showLocation"
+        tools:text="拍攝地點:"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/imageShow"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/showLocation"
+        android:layout_width="132dp"
+        android:layout_height="39dp"
+        android:text="台北"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/imageShow"
+        tools:text="台北101"
+        android:layout_marginRight="7dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="7dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="時間:"
+        android:textSize="24sp"
+        tools:text="時間:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/showDate"
+        android:layout_marginLeft="7dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView3"
+        android:layout_marginStart="7dp" />
+
+    <TextView
+        android:id="@+id/showDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017-10-20"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/showLocation"
+        app:layout_constraintTop_toBottomOf="@+id/showLocation"
+        android:layout_marginRight="7dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="7dp" />
+
+    <EditText
+        android:id="@+id/editShow"
+        android:layout_width="317dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:text="跟朋友在台北玩"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showDate"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/btnPre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp"
+        android:text="previous"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnNext"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:text="next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="462dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="441dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="441dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+</android.support.constraint.ConstraintLayout>
+
+
+<!--<TextView-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:text="Hello World!"-->
+<!--app:layout_constraintBottom_toBottomOf="parent"-->
+<!--app:layout_constraintLeft_toLeftOf="parent"-->
+<!--app:layout_constraintRight_toRightOf="parent"-->
+<!--app:layout_constraintTop_toTopOf="parent" />-->
